@@ -1,4 +1,4 @@
-# Donation Website with Payments through Razorpay\
+# Donation Website with Payments through Razorpay
 A simple website that accepts donations through Razorpay and sends an invoice through email as well as SMS.
 
 Users are greeted with the donation cause and active campaign period along with details of the organiser.\
