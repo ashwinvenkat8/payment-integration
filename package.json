@@ -1,0 +1,19 @@
+{
+  "name": "paymentgatewayintegration-task",
+  "version": "1.0.0",
+  "description": "TSF Payment Gateway Integration Task Project",
+  "main": "",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server"
+  },
+  "author": "Ashwin Venkat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "razorpay": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

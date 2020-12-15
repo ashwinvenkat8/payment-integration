@@ -1,0 +1,38 @@
+input[type='checkbox'] {
+    display: none;
+}
+.card-container {
+    display: grid;
+    perspective: 5000px;
+}
+.card-flip, .card-container {
+    transform-style: preserve-3d;
+    transition: all 0.7s ease-in-out;
+}
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.card-flip {
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease-in-out;
+}
+.front {
+    grid-area: frontAndBack;
+}
+.back {
+    grid-area: frontAndBack;
+    transform: rotateY(180deg);
+}
+input[type='checkbox']:checked + .card-container .card-flip {
+    transform: rotateY(-180deg);
+}
+input:focus::placeholder {
+    color: transparent;
+}
+.viewh-85 {
+    height: 85vh;
+}
