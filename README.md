@@ -25,8 +25,8 @@ payment at a later time or access the invoice anytime after payment as well.
 Implementation for TSF GRIP Web and Mobile Development Task #3
 
 _Known Issues_:
-  1. No visual prompts for invalid/unfilled form fields.
-  2. Confirmation for page redirection to Razorpay works even if the user clicks "Cancel".
+  1. No visual prompts for invalid/unfilled form fields. _**`Fixed`**_
+  2. Confirmation for page redirection to Razorpay works even if the user clicks "Cancel". _**`Fixed`**_
   3. Sessions have not been implemented for payments which causes invokation of the Create Invoice API\
      everytime the user clicks "Pay" on the donation site.
   4. Navigation back to the Razorpay payment page after completion of payment shows the "Proceed to Pay"\
