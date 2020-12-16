@@ -31,3 +31,4 @@ _Known Issues_:
      everytime the user clicks "Pay" on the donation site.
   4. Navigation back to the Razorpay payment page after completion of payment shows the "Proceed to Pay"\
      button instead of the paid invoice.
+  5. Not optimised for mobile.
