@@ -2,32 +2,45 @@ input[type='checkbox'] {
     display: none;
 }
 .card-container {
+    -webkit-perspective: 5000px;
     display: grid;
     perspective: 5000px;
 }
 .card-flip, .card-container {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.7s ease-in-out;
     transform-style: preserve-3d;
     transition: all 0.7s ease-in-out;
 }
 .card-flip div {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }
 .card-flip {
+    -webkit-grid-template: 1fr / 1fr;
+    -webkit-grid-template-areas: "frontAndBack";
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.7s ease-in-out;
     display: grid;
-    grid-template: 1fr/ 1fr;
+    grid-template: 1fr / 1fr;
     grid-template-areas: "frontAndBack";
     transform-style: preserve-3d;
     transition: all 0.7s ease-in-out;
 }
 .front {
+    -webkit-grid-area: frontAndBack;
     grid-area: frontAndBack;
 }
 .back {
+    -webkit-grid-area: frontAndBack;
+    -webkit-transform: rotateY(-180deg);
     grid-area: frontAndBack;
     transform: rotateY(180deg);
 }
 input[type='checkbox']:checked + .card-container .card-flip {
+    -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
 input:focus::placeholder {
@@ -35,4 +48,8 @@ input:focus::placeholder {
 }
 .viewh-85 {
     height: 85vh;
+}
+th:after {
+    content: "*";
+    color: #F00;
 }

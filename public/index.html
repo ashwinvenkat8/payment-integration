@@ -11,6 +11,9 @@
     <body>
         <center>
             <br>
+            <div class="lead text-danger">
+                <noscript>Please allow JavaScript to run to use the site as intended</noscript>
+            </div>
             <input type='checkbox' id="main-card">
             <div class="container-sm card-container">
                 <div class="card-flip shadow">
@@ -68,15 +71,15 @@
                         <div class="container-0 m-2">
                             <div class="container-0 m-2">
                                 <div class="row m-2">
-                                    <div class="col-3 m-2"></div>
-                                    <div class="col m-2">
-                                        <center>
+                                    <div class="col m-2"></div>
+                                    <div class="col-md-auto m-2">
+                                        <center><form name="donationForm">
                                             <table class="table m-2 table-borderless">
                                                 <tr>
                                                     <th class="lead text-left align-middle">Name&nbsp;</th>
                                                     <td>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" id="customerName" name="name" placeholder="Test Example" required>
+                                                            <input type="text" class="form-control" id="customerName" name="name" placeholder="Test Example"  maxlength="25" required>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -84,7 +87,7 @@
                                                     <th class="lead text-left align-middle">Email ID&nbsp;</th>
                                                     <td>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" id="customerEmail" name="email" placeholder="example@example.com" required>
+                                                            <input type="email" class="form-control" id="customerEmail" name="email" placeholder="example@example.com" maxlength="25" required>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -92,7 +95,7 @@
                                                     <th class="lead text-left align-middle">Phone No&nbsp;</th>
                                                     <td>
                                                         <div class="input-group">
-                                                            <input type="number" class="form-control" id="customerPhone" name="phno" placeholder="9876543210" required>
+                                                            <input type="telephone" class="form-control" id="customerPhone" name="phno" placeholder="9876543210" minlength="10" maxlength="10" required>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -108,9 +111,9 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                        </center>
+                                        </form></center>
                                     </div>
-                                    <div class="col-3 m-2"></div>
+                                    <div class="col m-2"></div>
                                 </div>
                             </div>
                         </div>
