@@ -26,7 +26,7 @@ _Known Issues_:
   1. No visual prompts for invalid/unfilled form fields. _**`Fixed`**_
   2. Confirmation for page redirection to Razorpay works even if the user clicks "Cancel". _**`Fixed`**_
   3. Sessions have not been implemented for payments which causes invokation of the Create Invoice API\
-     everytime the user clicks "Pay" on the donation site.
+     everytime the user clicks "Pay" on the donation site. _**`Fixed`**_
   4. Navigation back to the Razorpay payment page after completion of payment shows the "Proceed to Pay"\
      button instead of the paid invoice.
   5. Not optimised for mobile.
