@@ -22,8 +22,6 @@ payment at a later time or access the invoice anytime after payment as well.
 
 **Dependencies:** express, razorpay
 
-Implementation for TSF GRIP Web and Mobile Development Task #3
-
 _Known Issues_:
   1. No visual prompts for invalid/unfilled form fields. _**`Fixed`**_
   2. Confirmation for page redirection to Razorpay works even if the user clicks "Cancel". _**`Fixed`**_
